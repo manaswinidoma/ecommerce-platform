@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables (secrets - never push this)
+.env
+
+# VS Code
+.vscode/
+
+# Mac junk files
+.DS_Store
+
+# Pytest cache
+.pytest_cache/

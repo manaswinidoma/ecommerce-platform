@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+passlib[bcrypt]               # handles password hashing with bcrypt
+python-jose[cryptography]     # handles creating and verifying JWT tokens
+python-dotenvgit              # reads .env file so secrets never get hardcoded
