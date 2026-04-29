@@ -50,4 +50,5 @@ def deactivate_user(db, user_id):
         
     return user
         
-    
+def get_all_users(db):
+    return db.query(User).filter(User.is_active == True).all()
