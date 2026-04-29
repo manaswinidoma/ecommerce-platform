@@ -33,3 +33,13 @@ class UserResponse(BaseModel):
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
+    
+class UserUpdate(BaseModel):
+    username: Optional[str] = None
+    firstname: Optional[str] = None
+    lastname: Optional[str] = None
+    email: Optional[str] = None
+    date_of_birth: Optional[date] = None
+    class Config:
+        from_attributes = True
+    
